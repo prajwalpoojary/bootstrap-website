@@ -1,0 +1,35 @@
+{
+  "name": "bootstrap-website",
+  "version": "1.0.0",
+  "description": "Learning Bootstrap v5 with sass",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss:assets/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prajwalpoojary/bootstrap-website.git"
+  },
+  "keywords": [
+    "Bootstrap",
+    "bootstrap-v5",
+    "sass",
+    "learn-bootstrap",
+    "learn-sass"
+  ],
+  "author": "Prajwal Poojary",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prajwalpoojary/bootstrap-website/issues"
+  },
+  "homepage": "https://github.com/prajwalpoojary/bootstrap-website#readme",
+  "devDependencies": {
+    "sass": "1.35.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "5.15.3",
+    "autoprefixer": "10.2.6",
+    "bootstrap": "5.0.1",
+    "postcss-cli": "8.3.1"
+  }
+}
