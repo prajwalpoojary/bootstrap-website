@@ -10733,7 +10733,7 @@ textarea.form-control-lg {
   position: relative;
   padding: 0.9375rem 4.375rem 0.9375rem 1.25rem;
   border: 0.1rem solid rgba(255, 255, 255, 0.6);
-  background-color: white;
+  background-color: #fff;
   font-weight: 700;
 }
 .btn-rounded span {
@@ -10747,7 +10747,7 @@ textarea.form-control-lg {
   transform: translateY(-50%);
 }
 .btn-rounded span i {
-  color: white;
+  color: #fff;
   font-size: 1rem;
   line-height: 2.5;
 }
@@ -10771,6 +10771,12 @@ textarea.form-control-lg {
   color: white !important;
   text-transform: capitalize;
   font-weight: 600;
+}
+
+.intro {
+  background-color: #9926f0;
+  background: linear-gradient(to right, rgba(153, 38, 240, 0.95), rgba(209, 34, 227, 0.95));
+  font-family: "Poppins", sans-serif;
 }
 
 /*# sourceMappingURL=main.css.map */
