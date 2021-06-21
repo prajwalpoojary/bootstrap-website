@@ -7,6 +7,10 @@
   <title>Learning bootstrap v5 with sass</title>
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/vendors/css/glightbox.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
 </head>
 <body>
   <!-- ########################################################################
@@ -52,6 +56,58 @@
     </div>
   </nav>
 
+  <!-- ########################################################################
+                            START THE INTRO SECTION
+    ######################################################################### -->
+  <section class="intro text-light">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <!-- START THE CONTENT FOR THE INTRO -->
+        <div class="col-md intros text-start">
+          <h1 class="display-2">
+            <span class="display-2--intro">Hey!, I'm Patrick</span>
+            <span class="display-2--description lh-base">this is a multi-purpose responsive layout created with bootstrap v5. (here you can place your description
+            text)</span>
+          </h1>
+          <button type="button" class="btn btn-rounded rounded-pill">
+            Get In Touch
+            <span>
+              <i class="fas fa-arrow-right"></i>
+            </span>
+          </button>
+        </div>
+        <!-- START THE CONTENT FOR THE VIDEO -->
+        <div class="col-md intros text-end">
+          <div class="video-box">
+            <img class="img-fluid" src="assets/img/intro-section-illustration.png" alt="vieo illustration">
+            <a class="position-absolute top-50 start-50 translate-middle glightbox" href="#">
+              <span>
+                <i class="fas fa-play-circle"></i>
+              </span>
+              <span class="border-animation border-animation--border-1"></span>
+              <span class="border-animation border-animation--border-2"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#fff" fill-opacity="1"
+        d="M0,128L48,144C96,160,192,192,288,197.3C384,203,480,181,576,144C672,107,768,53,864,69.3C960,85,1056,171,1152,186.7C1248,203,1344,149,1392,122.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+      </path>
+    </svg>
+  </section>
+
+  <script src="assets/vendors/js/glightbox.min.js"></script>
+  <script>
+    const lightbox = GLightbox({
+      'href': 'https://www.youtube.com/watch?v=Ga6RYejo6Hk',
+      'type': 'video',
+      'source': 'youtube', //vimeo, youtube or local
+      'width': 900,
+      'autoplayVideos': 'true'
+    });
+  </script>
   <script src="assets/js/bootstrap.bundle.js"></script>
 </body>
 </html>
