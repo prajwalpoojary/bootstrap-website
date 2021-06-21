@@ -7,6 +7,7 @@
   <title>Learning bootstrap v5 with sass</title>
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/vendors/css/glightbox.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
     rel="stylesheet">
@@ -79,7 +80,7 @@
         <div class="col-md intros text-end">
           <div class="video-box">
             <img class="img-fluid" src="assets/img/intro-section-illustration.png" alt="vieo illustration">
-            <a class="position-absolute top-50 start-50 translate-middle" href="#">
+            <a class="position-absolute top-50 start-50 translate-middle glightbox" href="#">
               <span>
                 <i class="fas fa-play-circle"></i>
               </span>
@@ -97,6 +98,16 @@
     </svg>
   </section>
 
+  <script src="assets/vendors/js/glightbox.min.js"></script>
+  <script>
+    const lightbox = GLightbox({
+      'href': 'https://www.youtube.com/watch?v=Ga6RYejo6Hk',
+      'type': 'video',
+      'source': 'youtube', //vimeo, youtube or local
+      'width': 900,
+      'autoplayVideos': 'true'
+    });
+  </script>
   <script src="assets/js/bootstrap.bundle.js"></script>
 </body>
 </html>
