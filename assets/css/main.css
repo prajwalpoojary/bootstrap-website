@@ -10933,4 +10933,49 @@ textarea.form-control-lg {
   }
 }
 
+.testimonials {
+  position: relative;
+  background-color: #9926f0;
+  background: linear-gradient(to right, rgba(153, 38, 240, 0.95), rgba(209, 34, 227, 0.95));
+}
+.testimonials__card {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 2rem 1.25rem;
+  border-radius: 0.625rem;
+  height: auto;
+  text-align: center;
+}
+.testimonials__card i {
+  font-size: 1.5rem;
+  color: rgba(153, 38, 240, 0.7);
+}
+.testimonials__card .ratings i {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+.testimonials__img {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 6rem;
+  height: 6rem;
+}
+.testimonials__img img {
+  border: 0.325rem solid rgba(153, 38, 240, 0.7);
+}
+.testimonials__client {
+  padding-top: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: 500;
+  color: #fff;
+}
+.testimonials__client h3 {
+  text-transform: capitalize;
+}
+.testimonials__client p {
+  padding-bottom: 2rem;
+  text-transform: capitalize;
+}
+
 /*# sourceMappingURL=main.css.map */
