@@ -10742,7 +10742,7 @@ textarea.form-control-lg {
 .btn-rounded {
   position: relative;
   padding: 0.9375rem 4.375rem 0.9375rem 1.25rem;
-  border: 0.1rem solid rgba(255, 255, 255, 0.6);
+  border: 0.1rem solid #9926f0;
   background-color: #fff;
   font-weight: 700;
 }
@@ -10873,7 +10873,7 @@ textarea.form-control-lg {
   height: 6rem;
   border: 0.55rem solid #fff;
   border-radius: 50%;
-  animation: pulse-border 1.5 s linear infinite;
+  animation: pulse-border 1.5s linear infinite;
 }
 .border-animation--border-1 {
   animation-delay: 1s;
