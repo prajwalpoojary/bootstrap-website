@@ -16,7 +16,7 @@
   <!-- ########################################################################
                         START THE NAVIGATION SECTION
     ######################################################################### -->
-  <nav class="navbar navbar-expand-lg navbar-dark menu shadow ">
+  <nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
     <div class="container">
       <a class="navbar-brand" href="#">
         <img src="assets/img/logo.png" alt="Patrix">
@@ -28,25 +28,25 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
+            <a class="nav-link" href="#services">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Testimonials</a>
+            <a class="nav-link" href="#testimonials">Testimonials</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Faq</a>
+            <a class="nav-link" href="#faq">Faq</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Portpolio</a>
+            <a class="nav-link" href="#portpolio">Portpolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
-        <button type="button" class="btn-rounded rounded-pill d-none d-md-block">
+        <button type="button" class="rounded-pill btn-rounded">
           +1 728365413
           <span>
            <i class="fas fa-phone-alt"></i>
@@ -59,9 +59,9 @@
   <!-- ########################################################################
                         START THE INTRO SECTION
     ######################################################################### -->
-  <section class="intro text-light">
+  <section class="intro" id="home">
     <div class="container">
-      <div class="row align-items-center justify-content-between">
+      <div class="row align-items-center justify-content-between text-white">
         <!-- START THE CONTENT FOR THE INTRO -->
         <div class="col-md intros text-start">
           <h1 class="display-2">
@@ -69,7 +69,7 @@
             <span class="display-2--description lh-base">this is a multi-purpose responsive layout created with bootstrap v5. (here you can place your description
             text)</span>
           </h1>
-          <button type="button" class="btn btn-rounded rounded-pill">
+          <button type="button" class="rounded-pill btn-rounded">
             Get In Touch
             <span>
               <i class="fas fa-arrow-right"></i>
@@ -105,36 +105,37 @@
     <div class="container">
       <div class="row text-center">
         <h4 class="fw-bold lead mb-3">Trusted by companies like</h4>
-        <div class="heading-line"></div>
+        <div class="heading-line mb-5"></div>
       </div>
+      <!-- START THE COMPANIES CONTENT -->
       <div class="row align-items-center">
         <div class="col-md-4 col-lg-2">
-          <div class="companies__logo shadow-sm">
+          <div class="companies__logo-box shadow-sm">
             <img title="Microsoft" src="assets/img/microsoft.png" alt="Microsoft">
           </div>
         </div>
         <div class="col-md-4 col-lg-2">
-          <div class="companies__logo shadow-sm">
+          <div class="companies__logo-box shadow-sm">
             <img title="Google" src="assets/img/google.png" alt="Google">
           </div>
         </div>
         <div class="col-md-4 col-lg-2">
-          <div class="companies__logo shadow-sm">
+          <div class="companies__logo-box shadow-sm">
             <img title="Walmart" src="assets/img/walmart.png" alt="Walmart">
           </div>
         </div>
         <div class="col-md-4 col-lg-2">
-          <div class="companies__logo shadow-sm">
+          <div class="companies__logo-box shadow-sm">
             <img title="Airbnb" src="assets/img/airbnb.png" alt="Airbnb">
           </div>
         </div>
         <div class="col-md-4 col-lg-2">
-          <div class="companies__logo shadow-sm">
+          <div class="companies__logo-box shadow-sm">
             <img title="CNN" src="assets/img/cnn.png" alt="CNN">
           </div>
         </div>
         <div class="col-md-4 col-lg-2">
-          <div class="companies__logo shadow-sm">
+          <div class="companies__logo-box shadow-sm">
             <img title="Amazon" src="assets/img/amazon.png" alt="Amazon">
           </div>
         </div>
@@ -145,14 +146,15 @@
   <!-- ########################################################################
                         START THE SERVICES SECTION
     ######################################################################### -->
-  <section class="services">
+  <section class="services" id="services">
     <div class="container">
       <div class="row text-center">
         <h2 class="display-3 fw-bold">Our Services</h2>
-        <div class="heading-line mb-1"></div>
+        <div class="heading-line mb-3 mb-md-5"></div>
       </div>
-      <div class="row pt-2 pb-2 mt-0 mb-3">
-        <div class="col-md  border-right">
+      <!-- START THE DESCRIPTION CONTENT -->
+      <div class="row pt-2 pb-2 mt-0 mt-md-5 mb-0 mb-md-3">
+        <div class="col-md border-right">
           <div class="bg-white p-3">
             <h3 class="fw-bold text-capitalize text-center">our services range from intial design to deployment anywhere. anytime.</h3>
           </div>
@@ -163,16 +165,17 @@
           </div>
         </div>
       </div>
+      <!-- START THE CONTENT FOR THE SERVICES -->
       <!-- MARKETING -->
-      <div class="row align-items-center justify-content-between mt-4">
-        <div class="col-md col-lg text-start">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-md col-lg text-center text-md-start">
           <div class="card border-0 services__content">
             <div class="card-body">
               <span><i class="fas fa-paper-plane"></i></span>
-              <h5 class="card-title display-3">Marketing</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias consequatur, est sed
+              <h5 class="card-title display-3--title mt-1">Marketing</h5>
+              <p class="card-text lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias consequatur, est sed
                 praesentium vitae rerum quam quasi architecto doloremque deserunt!</p>
-              <button type="button" class="btn btn-rounded rounded-pill btn-service">
+              <button type="button" class="btn-rounded rounded-pill border-primary">
                 Learn More
                 <span><i class="fas fa-arrow-right"></i></span>
               </button>
@@ -184,18 +187,18 @@
         </div>
       </div>
       <!-- WEB DEBVELOPMENT -->
-      <div class="row align-items-center justify-content-between mt-4">
+      <div class="row align-items-center justify-content-between">
         <div class="col-md col-lg services__content text-start">
           <img class="img-fluid" src="assets/img/web-development.png" alt="web development illustration">
         </div>
-        <div class="col-sm col-md col-lg text-start">
+        <div class="col-sm col-md col-lg text-center text-md-start">
           <div class="card border-0 services__content">
             <div class="card-body">
               <span><i class="fas fa-code"></i></span>
-              <h5 class="card-title display-3">Web Development</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias consequatur, est sed
+              <h5 class="card-title display-3--title">Web Development</h5>
+              <p class="card-text lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias consequatur, est sed
                 praesentium vitae rerum quam quasi architecto doloremque deserunt!</p>
-              <button type="button" class="btn btn-rounded rounded-pill">
+              <button type="button" class="btn-rounded rounded-pill border-primary">
                 Learn More
                 <span><i class="fas fa-arrow-right"></i></span>
               </button>
@@ -204,15 +207,15 @@
         </div>
       </div>
       <!-- CLOUD HOSTING -->
-      <div class="row align-items-center justify-content-between mt-4">
-        <div class="col-sm col-md col-lg text-start">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-sm col-md col-lg text-center text-md-start">
           <div class="card border-0 services__content">
             <div class="card-body">
               <span><i class="fas fa-cloud-upload-alt"></i></span>
-              <h5 class="card-title display-3">Cloud Hosting</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias consequatur, est sed
+              <h5 class="card-title display-3--title">Cloud Hosting</h5>
+              <p class="card-text lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias consequatur, est sed
                 praesentium vitae rerum quam quasi architecto doloremque deserunt!</p>
-              <button type="button" class="btn btn-rounded rounded-pill">
+              <button type="button" class="btn-rounded rounded-pill border-primary">
                 Learn More
                 <span><i class="fas fa-arrow-right"></i></span>
               </button>
@@ -227,9 +230,9 @@
   </section>
 
   <!-- ########################################################################
-                          START THE TESTIMONIALS SECTION
+                        START THE TESTIMONIALS SECTION
     ######################################################################### -->
-    <section class="testimonials">
+    <section class="testimonials" id="testimonials">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path fill="#fff" fill-opacity="1"
           d="M0,192L34.3,186.7C68.6,181,137,171,206,176C274.3,181,343,203,411,192C480,181,549,139,617,128C685.7,117,754,139,823,165.3C891.4,192,960,224,1029,245.3C1097.1,267,1166,277,1234,272C1302.9,267,1371,245,1406,234.7L1440,224L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z">
@@ -237,18 +240,18 @@
       </svg>
       <div class="container">
         <div class="text-center text-light">
-          <h2 class="display-4 fw-bold">Testimonials</h2>
+          <h2 class="display-3 fw-bold">Testimonials</h2>
           <hr style="width: 100px; height: 3px;" class="mx-auto">
           <p class="lead pt-1">What our clients are saying</p>
         </div>
   
         <!-- START THE CAROUSEL CONTENT -->
         <div class="row align-items-center">
-          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div id="testimonialsCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <!-- CAROUSEL ITEM 1 -->
               <div class="carousel-item active">
-                <!-- quote -->
+                <!-- testimonials card -->
                 <div class="testimonials__card">
                   <p class="lh-lg">
                     <i class="fas fa-quote-left"></i>
@@ -263,19 +266,19 @@
                     <i class="fas fa-star"></i>
                   </div>
                 </div>
-                <!-- image -->
-                <div class="testimonials__img">
+                <!-- client picture -->
+                <div class="testimonials__picture">
                   <img class="img-fluid rounded-circle" src="assets/img/client-1.jpg" alt="client picture 1">
                 </div>
-                <!-- name & designation -->
-                <div class="testimonials__client">
+                <!-- client name & role -->
+                <div class="testimonials__name">
                   <h3>John Doe</h3>
                   <p class="fw-light">Project Manager</p>
                 </div>
               </div>
               <!-- CAROUSEL ITEM 2 -->
               <div class="carousel-item">
-                <!-- quote -->
+                <!-- testimonials card -->
                 <div class="testimonials__card">
                   <p class="lh-lg">
                     <i class="fas fa-quote-left"></i>
@@ -290,19 +293,19 @@
                     <i class="fas fa-star"></i>
                   </div>
                 </div>
-                <!-- image -->
-                <div class="testimonials__img">
+                <!-- client picture -->
+                <div class="testimonials__picture">
                   <img class="img-fluid rounded-circle" src="assets/img/client-2.jpg" alt="client picture 2">
                 </div>
-                <!-- name & designation -->
-                <div class="testimonials__client">
+                <!-- client name & role -->
+                <div class="testimonials__name">
                   <h3>Jane Smith</h3>
                   <p class="fw-light">CFO</p>
                 </div>
               </div>
               <!-- CAROUSEL ITEM 3 -->
               <div class="carousel-item">
-                <!-- quote -->
+                <!-- testimonials card -->
                 <div class="testimonials__card">
                   <p class="lh-lg">
                     <i class="fas fa-quote-left"></i>
@@ -317,20 +320,20 @@
                     <i class="fas fa-star"></i>
                   </div>
                 </div>
-                <!-- image -->
-                <div class="testimonials__img">
+                <!-- client image -->
+                <div class="testimonials__picture">
                   <img class="img-fluid rounded-circle" src="assets/img/client-3.jpg" alt="client picture 3">
                 </div>
-                <!-- name & designation -->
-                <div class="testimonials__client">
+                <!-- client name & role -->
+                <div class="testimonials__name">
                   <h3>Jessica Alba</h3>
                   <p class="fw-light">UI/UX Developer</p>
                 </div>
               </div>
             </div>
             <div class="text-center">
-              <button class="btn btn-outline-light fas fa-long-arrow-alt-left" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev"></button>
-              <button class="btn btn-outline-light fas fa-long-arrow-alt-right" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next"></button>
+              <button class="btn btn-outline-light fas fa-long-arrow-alt-left" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="prev"></button>
+              <button class="btn btn-outline-light fas fa-long-arrow-alt-right" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="next"></button>
             </div>
           </div>
         </div>
@@ -343,19 +346,19 @@
     </section>
 
   <!-- ########################################################################
-                            START THE FAQ SECTION
+                        START THE FAQ SECTION
     ######################################################################### -->
-  <section class="faq">
+  <section class="faq" id="faq">
     <div class="container">
       <div class="text-center">
         <h2 class="display-3 fw-bold text-uppercase">FAQ</h2>
         <div class="heading-line mb-1"></div>
         <p class="lead pt-1">Frequently asked questions. Get knowledge before hand.</p>
       </div>
+      <!-- ACCORDION CONTENT -->
       <div class="row align-items-center justify-content-center">
         <div class="col">
-          <!-- ACCORDION CONTENT -->
-          <div class="accordion" id="faq">
+          <div class="accordion" id="faqAccordion">
             <!-- ACCORDION ITEM 1 -->
             <div class="accordion-item mb-3 shadow">
               <h2 class="accordion-header" id="headingOne">
@@ -365,7 +368,7 @@
                 </button>
               </h2>
               <div id="questionOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                data-bs-parent="#faq">
+                data-bs-parent="#faqAccordion">
                 <div class="accordion-body">
                   <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds
                   the appropriate classes that we use to style each element. These classes control the overall appearance, as well
@@ -379,12 +382,12 @@
             <div class="accordion-item mb-3 shadow">
               <h2 class="accordion-header" id="headingTwo">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#questionTwo"
-                  aria-expanded="false" aria-controls="#questionTwo">
+                  aria-expanded="false" aria-controls="questionTwo">
                   Do I have to pay again after the trail?
                 </button>
               </h2>
-              <div id="ques#questionTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                data-bs-parent="#accordionExample">
+              <div id="questionTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#faqAccordion">
                 <div class="accordion-body">
                   <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin
                   adds the appropriate classes that we use to style each element. These classes control the overall appearance, as
@@ -402,8 +405,8 @@
                   How can I get started after trail?
                 </button>
               </h2>
-              <div id="que#questionThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                data-bs-parent="#accordionExample">
+              <div id="questionThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#faqAccordion">
                 <div class="accordion-body">
                   <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin
                   adds the appropriate classes that we use to style each element. These classes control the overall appearance, as
@@ -415,14 +418,14 @@
             </div>
             <!-- ACCORDION ITEM 4 -->
             <div class="accordion-item mb-3 shadow">
-              <h2 class="accordion-header" id="headingThree">
+              <h2 class="accordion-header" id="headingFour">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#questionFour"
-                  aria-expanded="false" aria-controls="#questionFour">
+                  aria-expanded="false" aria-controls="questionFour">
                   Can I be refunded if I'm not satisfied?
                 </button>
               </h2>
-              <div id="quw#questionFour" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                data-bs-parent="#accordionExample">
+              <div id="questionFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                data-bs-parent="#faqAccordion">
                 <div class="accordion-body">
                   <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin
                   adds the appropriate classes that we use to style each element. These classes control the overall appearance, as
