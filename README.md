@@ -8,3 +8,8 @@
   - postcss-cli
   - autoprefixer
 
+### Resources
+  - manypixels
+  - getwaves
+  - glightbox
+

@@ -13,29 +13,3 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-// MEDIA QUERIES
-$breakpoint-up: (
-  "sm": "568px",
-  "md": "780px",
-  "lg": "1024px",
-  "xlg": "1200px"
-);
-
-$breakpoint-down: (
-  "sm": "779px",
-  "md": "1023px",
-  "lg": "1199px"
-);
-
-@mixin  media-breakpoint-up($size) {
-  @media (min-width: map-get($breakpoint-up, $size)) {
-    @content;
-  }
-}
-
-@mixin  media-breakpoint-down($size) {
-  @media (max-width: map-get($breakpoint-up, $size)) {
-    @content;
-  }
-}

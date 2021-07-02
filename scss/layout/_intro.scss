@@ -6,7 +6,6 @@
   padding: 10rem 0 0 0;
   width: 100%;
   height: 100%;
-  
 }
 
 .intros {
@@ -15,7 +14,6 @@
     position: relative;
 
     a {
-      // @include absoluteCenter;
 
       span {
         
@@ -43,6 +41,6 @@
   }
 
   &--border-2 {
-    animation-delay: 1.2s;
+    animation-delay: 1.5s;
   }
 }
