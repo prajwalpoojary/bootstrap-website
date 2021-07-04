@@ -68,6 +68,7 @@
   }
 }
 
+// BORDER RIGHT
 .border-right {
   border-right: 0.1rem solid $gray-300;
   height: 100%;
@@ -75,4 +76,9 @@
   @include media-breakpoint-down(md) {
     border-right: none;
   }
+}
+
+// GRADIENT
+.gradient {
+  @include gradient;
 }

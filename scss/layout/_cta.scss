@@ -1,0 +1,52 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.get-started {
+  padding: 4rem 0;
+  background-color: $gray-200;
+}
+
+.cta-info {
+  margin: 1rem 0;
+  padding: 3rem;
+
+  @include media-breakpoint-down(md) {
+    padding: 1rem;
+  }
+
+  &__list {
+    display: block;
+    margin-bottom: 0.7rem;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    list-style: none;
+
+    li::before {
+      font-family: "Font Awesome 5 free";
+      content: "\f00c";
+      font-weight: 600;
+      margin-right: 0.5rem;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+// FORM CONTENT
+.form {
+  padding: 3rem;
+
+  @include media-breakpoint-down(md) {
+    padding: 1rem;
+  }
+
+  button {
+    border: none;
+    color: $white;
+
+    a {
+      color: $white;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
+}
