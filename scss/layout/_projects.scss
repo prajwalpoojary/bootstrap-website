@@ -1,0 +1,59 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.portpolio {
+  padding: 4rem 0;
+}
+
+.portpolio-box {
+  position: relative;
+  width: 100%;
+  height: 18.5rem;
+  margin-bottom: 1.2rem;
+  overflow: hidden;
+  border-top: 0.5rem solid $purple-light;
+
+  img {
+    width: 100%;
+
+    @include media-breakpoint-up(lg) {
+      height: 100%;
+    } 
+  }
+
+  .portpolio-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($primary, 0.75);
+    opacity: 0;
+    visibility: hidden;
+
+    .caption {
+      @include absoluteCenter;
+      text-align: center;
+      color: $white;
+      
+      h4 {
+        text-transform: uppercase;
+        display: block;
+      }
+    }
+  }
+
+  &:hover {
+
+    img {
+      transform: scale(1.5);
+      @include transitionProperty;
+    }
+
+    .portpolio-info {
+      opacity: 1;
+      visibility: visible;
+      @include transitionProperty;
+    }
+  }
+}
