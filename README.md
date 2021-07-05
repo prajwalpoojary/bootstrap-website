@@ -1,5 +1,5 @@
 # Patrix
-  A sample portfolio website built with Bootstrap5 and SCSS
+  A sample portfolio website built with Bootstrap5 and SCSS - Built by [Patrick Muriungi](https://github.com/MuriungiPatrick)
 
 ### Packages we need
   - sass
@@ -12,4 +12,7 @@
   - manypixels
   - getwaves
   - glightbox
+
+### Source
+  [freeCodeCamp](https://www.youtube.com/watch?reload=9&v=iJKCj8uAHz8)
 
