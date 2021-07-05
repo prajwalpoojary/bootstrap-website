@@ -6,7 +6,7 @@
   background-color: $footer;
 }
 
-// START THE CONTACT BOX CONTENT
+// STYLE THE CONTACT BOX CONTENT
 .contact-box {
 
   &__icon {
@@ -39,6 +39,29 @@
 
       @include media-breakpoint-up(sm) {
         font-size: 1rem;
+      }
+    }
+  }
+}
+
+// STYLE THE SOCIAL MEDIA CONTENT
+.footer-sm {
+
+  a {
+    color: $white;
+
+    i {
+      font-size: 1rem;
+      margin-left: 1rem;
+
+      @include media-breakpoint-up(sm) {
+        font-size: 1.6rem;
+      }
+    }
+
+    &:hover {
+      i {
+        color: $primary;
       }
     }
   }
