@@ -11147,4 +11147,19 @@ textarea.form-control-lg {
   color: #9926f0;
 }
 
+.company-list {
+  display: block;
+  list-style-type: none;
+}
+.company-list li {
+  margin-bottom: 0.5rem;
+}
+.company-list li a {
+  color: #fff;
+  text-decoration: none;
+}
+.company-list li a:hover {
+  color: #9926f0;
+}
+
 /*# sourceMappingURL=main.css.map */

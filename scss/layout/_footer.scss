@@ -66,3 +66,22 @@
     }
   }
 }
+
+// STYLE THE COMPANY INFO CONTENT
+.company-list {
+  display: block;
+  list-style-type: none;
+
+  li {
+    margin-bottom: 0.5rem;
+
+    a {
+      color: $white;
+      text-decoration: none;
+
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+}
